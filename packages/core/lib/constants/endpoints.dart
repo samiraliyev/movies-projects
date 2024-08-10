@@ -15,8 +15,8 @@ abstract class Ports {
 }
 
 abstract class Endpoints {
-  static const String devBaseUrl = 'http://api-test.oilink.io';
-  static const String prodBaseUrl = 'http://api-test.oilink.io';
+  static const String devBaseUrl = 'http://api-test.movie.io';
+  static const String prodBaseUrl = 'http://api-test.movie.io';
 
   static const isProd = false;
 
