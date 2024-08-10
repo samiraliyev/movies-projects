@@ -1,0 +1,36 @@
+name: oilink_app
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+  clean:
+    hooks:
+      # Runs "flutter clean" in all Flutter packages (`--flutter`)
+      # with a concurrency of 3 at a time (`--concurrency=3`).
+      post: melos exec --flutter --concurrency=3 -- "flutter clean"
+
+sdkPath: .fvm/flutter_sdk
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+#usePubspecOverrides: true
+
+packages:
+  - ./*
+  - packages/**
+  - apps/*
+#  - oilink_app
+#  - features/*
+
+scripts:
+  build:
+    run: melos exec -- "flutter build" .
+    description: Run `dart analyze` in all packages.
+  analyze:
+    run: melos exec -- "flutter analyze" .
+    description: Run `dart analyze` in all packages.
+
+  format:
+    run: melos exec -- "flutter format . --set-exit-if-changed"
+    description: Run `dart format .` in all packages
