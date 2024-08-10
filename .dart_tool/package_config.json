@@ -254,7 +254,7 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "oilink_app",
+      "name": "movie_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"

@@ -1,4 +1,4 @@
-name: oilink_app
+name: movie_app
 command:
   bootstrap:
     usePubspecOverrides: true
@@ -20,7 +20,7 @@ packages:
   - ./*
   - packages/**
   - apps/*
-#  - oilink_app
+#  - movie_app
 #  - features/*
 
 scripts:
