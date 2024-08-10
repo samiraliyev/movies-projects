@@ -51,9 +51,9 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/collection-1.19.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "2.18"
     },
     {
       "name": "conventional_commit",
@@ -75,21 +75,21 @@
     },
     {
       "name": "graphs",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/graphs-2.3.2",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/graphs-2.3.1",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "2.18"
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/http-1.2.2",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/http-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "http_parser",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/http_parser-4.1.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "2.12"
     },
     {
       "name": "intl",
@@ -141,9 +141,9 @@
     },
     {
       "name": "platform",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/platform-3.1.5",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/platform-3.1.4",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.0"
     },
     {
       "name": "pool",
@@ -219,9 +219,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/test_api-0.7.3",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/test_api-0.7.1",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.0"
     },
     {
       "name": "typed_data",
@@ -234,12 +234,6 @@
       "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/uri-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
-    },
-    {
-      "name": "web",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/web-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.4"
     },
     {
       "name": "yaml",
@@ -260,10 +254,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-08-10T12:34:46.139366Z",
+  "generated": "2024-08-10T13:46:59.383830Z",
   "generator": "pub",
-  "generatorVersion": "3.4.3",
-  "flutterRoot": "file:///Users/macbookpro/fvm/versions/3.22.2",
-  "flutterVersion": "3.22.2",
-  "pubCache": "file:///Users/macbookpro/.pub-cache"
+  "generatorVersion": "3.1.2"
 }
