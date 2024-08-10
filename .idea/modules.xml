@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/api_service/melos_api_service.iml" filepath="$PROJECT_DIR$/packages/api_service/melos_api_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/core/melos_core.iml" filepath="$PROJECT_DIR$/packages/core/melos_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/apps/movie_admin_app/melos_movie_admin_app.iml" filepath="$PROJECT_DIR$/apps/movie_admin_app/melos_movie_admin_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/apps/movie_user_app/melos_movie_user_app.iml" filepath="$PROJECT_DIR$/apps/movie_user_app/melos_movie_user_app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/melos_oilink_app.iml" filepath="$PROJECT_DIR$/melos_oilink_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_movie_app.iml" filepath="$PROJECT_DIR$/melos_movie_app.iml" />
     </modules>
   </component>
 </project>
