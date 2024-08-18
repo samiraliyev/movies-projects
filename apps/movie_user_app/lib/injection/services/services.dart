@@ -1,6 +1,6 @@
-import 'dart:io';
 
 import 'package:api_service/api_service.dart';
+import 'package:auth/auth.dart';
 import 'package:core/constants/endpoints.dart';
 import 'package:core/error/error_interceptor.dart';
 import 'package:dio/dio.dart';
@@ -9,6 +9,9 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../riverpod/data_sources.dart';
+
 
 
 final secureStorageProvider = Provider<FlutterSecureStorage>((ref) {
@@ -33,8 +36,8 @@ final tokenStorageProvider = Provider<TokenStorage>(
 
 final dioProvider = Provider<Dio>(
   (ref) {
-    // final enviroment = ref.watch(environmentProvider);
-    // Endpoints.environment = enviroment;
+    // final environment = ref.watch(environmentProvider);
+    // Endpoints.environment = environment;
 
     final dio = Dio()
       ..options = BaseOptions(
@@ -67,9 +70,7 @@ final dioProvider = Provider<Dio>(
     // );
 
     final authInterceptor = AuthInterceptor(
-      authLocalDataSource: ref.watch(
-        authLocalDataSourceProvider,
-      ),
+
       tokenStorage: ref.watch(
         tokenStorageProvider,
       ),
@@ -81,7 +82,7 @@ final dioProvider = Provider<Dio>(
 
     dio.interceptors.addAll(
       [
-        // if (enviroment != Environment.production)
+        // if (environment != Environment.production)
         PrettyDioLogger(
           requestHeader: true,
           requestBody: true,

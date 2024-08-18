@@ -1,3 +1,4 @@
 
 # FVM Version Cache
-.fvm/
+.fvm/flutter_sdk
+local_data/
