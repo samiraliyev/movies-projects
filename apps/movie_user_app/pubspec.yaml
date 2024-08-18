@@ -30,7 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_localizations:
+    sdk: flutter
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
@@ -38,6 +39,8 @@ dependencies:
   shared_preferences: ^2.3.2
   firebase_core: ^3.3.0
   firebase_performance: ^0.10.0+4
+  firebase_crashlytics: ^4.0.4
+  stack_trace: ^1.11.1
   equatable: ^2.0.5
   flutter_riverpod: ^2.5.1
   firebase_analytics: ^11.2.1
@@ -45,6 +48,8 @@ dependencies:
   flutter_secure_storage: ^9.2.2
   local_auth: ^2.3.0
   pretty_dio_logger: ^1.4.0
+  dio: ^5.6.0
+  keyboard_dismisser: ^3.0.0
 
 
 
@@ -57,11 +62,28 @@ dependencies:
     git:
       url: git@github.com:samiraliyev/movies_projects.git
       path: packages/core
+  auth:
+    git:
+      url: git@github.com:samiraliyev/movies_projects.git
+      path: packages/auth
+  localization:
+    git:
+      url: git@github.com:samiraliyev/movies_projects.git
+      path: packages/localization
+  app_theme:
+    git:
+      url: git@github.com:samiraliyev/movies_projects.git
+      path: packages/app_theme
+  ui_components:
+    git:
+      url: git@github.com:samiraliyev/movies_projects.git
+      path: packages/ui_components
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  build_runner: ^2.4.11
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -74,7 +96,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  generate: true
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

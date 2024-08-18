@@ -1,9 +1,14 @@
 import 'package:core/core/provider_observer.dart';
 import 'package:equatable/equatable.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'features/app/app_startup_wrapper.dart';
+import 'firebase_options.dart';
+import 'injection/services/services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,9 +16,9 @@ void main() async {
   // final appProtectionService = InAppProtectionService();
   // await appProtectionService.init();
 
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
 
 
@@ -37,6 +42,6 @@ void main() async {
   // await ScreenProtectUtils.disableScreenCapture();
   // await ScreenProtectUtils.protectDataLeakage();
 
-  await ServiceLocator.init(sharedPreferences: sharedPreferences);
   await AppStartupWrapper.initialize(container);
+
 }
