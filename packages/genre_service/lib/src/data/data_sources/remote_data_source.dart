@@ -24,6 +24,6 @@ class GenreRemoteDataSourceImpl extends GenreRemoteDataSource {
 
     log("response: ${response.data.runtimeType}");
     log("response: ${response.data}");
-    return genreListResponseModelFromMap(response.data);
+    return GenreListResponseModel.fromMap(response.data);
   }
 }

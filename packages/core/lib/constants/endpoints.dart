@@ -100,9 +100,9 @@ abstract class Endpoints {
 extension EndpointExt on Endpoints {
   static String path(Endpoint endpoint) {
     if (Endpoints.isProd) {
-      return '/api${endpoint.prodPath}';
+      return '${endpoint.prodPath}';
     }
 
-    return ':${endpoint.port}/api${endpoint.prodPath!}';
+    return ':${endpoint.port}${endpoint.prodPath!}';
   }
 }

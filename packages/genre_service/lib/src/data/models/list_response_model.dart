@@ -6,8 +6,9 @@ import 'dart:convert';
 
 import '../../domain/entities/list_response_entity.dart';
 
-GenreListResponseModel genreListResponseModelFromMap(String str) =>
-    GenreListResponseModel.fromMap(json.decode(str));
+GenreListResponseModel genreListResponseModelFromMap(
+        Map<String, dynamic> json) =>
+    GenreListResponseModel.fromMap(json);
 
 String genreListResponseModelToMap(GenreListResponseModel data) =>
     json.encode(data.toMap());
@@ -21,7 +22,7 @@ class GenreListResponseModel extends GenreListResponseEntity {
       GenreListResponseModel(
         results: json["results"] == null
             ? []
-            : List<String>.from(json["results"]!.map((x) => x)),
+            : List<String>.from(json["results"]!.map((x) => x.toString())),
       );
 
   Map<String, dynamic> toMap() => {

@@ -24,7 +24,8 @@ class _AppState extends ConsumerState<App> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.delayed(const Duration(seconds: 3), () {
-        context.go(AppRoutes.genreList);
+        final appRouter = ref.read(appRouterProvider).router;
+        appRouter.go(AppRoutes.genreList);
       });
       // ref.read(authNotifierProvider.notifier).getInitAuth();
     });
@@ -106,6 +107,9 @@ class _AppState extends ConsumerState<App> {
                       builder: (context, child) {
                         // ScreenProtectUtils.protectDataLeakage();
 
+                        // Future.delayed(const Duration(seconds: 3), () {
+                        //   context.push(AppRoutes.genreList);
+                        // });
                         return PageWrapper(child: child!);
                       },
                     ),
