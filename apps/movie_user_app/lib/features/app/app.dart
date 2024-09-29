@@ -1,7 +1,8 @@
-
+import 'package:core/constants/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:app_theme/app_theme.dart';
+import 'package:go_router/go_router.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:ui_components/ui_components.dart';
@@ -22,6 +23,9 @@ class _AppState extends ConsumerState<App> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      Future.delayed(const Duration(seconds: 3), () {
+        context.go(AppRoutes.genreList);
+      });
       // ref.read(authNotifierProvider.notifier).getInitAuth();
     });
   }

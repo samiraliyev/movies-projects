@@ -1,4 +1,4 @@
-# melos_managed_dependency_overrides: api_service,app_theme,auth,core,localization,ui_components
+# melos_managed_dependency_overrides: api_service,app_theme,auth,core,localization,ui_components,genre_service
 dependency_overrides:
   api_service:
     path: ../../packages/api_service
@@ -8,6 +8,8 @@ dependency_overrides:
     path: ../../packages/auth
   core:
     path: ../../packages/core
+  genre_service:
+    path: ../../packages/genre_service
   localization:
     path: ../../packages/localization
   ui_components:

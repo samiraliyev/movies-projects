@@ -1,7 +1,9 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:movie_user_app/features/splash/splash.dart';
+import 'package:movie_user_app/features/splash/presentation/pages/splash.dart';
+
+import '../features/genre/presentation/pages/genre_list_page.dart';
 // part 'app_router.g.dart';
 
 class AppRouter {
@@ -39,6 +41,13 @@ class AppRouter {
         path: AppRoutes.splash,
         builder: (context, state) {
           return const SplashScreen();
+        },
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootNavigatorKey,
+        path: AppRoutes.genreList,
+        builder: (context, state) {
+          return const GenreListPage();
         },
       ),
     ],

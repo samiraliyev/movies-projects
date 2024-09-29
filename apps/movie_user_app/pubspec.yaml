@@ -79,6 +79,13 @@ dependencies:
       url: git@github.com:samiraliyev/movies_projects.git
       path: packages/ui_components
 
+
+  genre_service:
+    git:
+      url: git@github.com:samiraliyev/movies_projects.git
+      path: packages/genre_service
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
