@@ -15,8 +15,8 @@ abstract class Ports {
 }
 
 abstract class Endpoints {
-  static const String devBaseUrl = 'http://api-test.movie.io';
-  static const String prodBaseUrl = 'http://api-test.movie.io';
+  static const String devBaseUrl = 'https://moviesdatabase.p.rapidapi.com';
+  static const String prodBaseUrl = 'https://moviesdatabase.p.rapidapi.com';
 
   static const isProd = false;
 
@@ -90,9 +90,9 @@ abstract class Endpoints {
     port: Ports.p8009,
   );
 
-  static const productList = Endpoint(
-    path: '$_v1/products/',
-    prodPath: '/products/',
+  static const genres = Endpoint(
+    path: '$_v1/titles/utils/genres/',
+    prodPath: '/titles/utils/genres/',
     port: Ports.p8009,
   );
 

@@ -11,7 +11,6 @@ import 'package:rxdart/subjects.dart';
 
 import 'token_storage.dart';
 
-
 final sessionExpired = BehaviorSubject<bool>();
 typedef TokenPair = ({String accessToken, String refreshToken});
 
@@ -79,6 +78,9 @@ class AuthInterceptor extends QueuedInterceptor {
       options.headers['app-name'] = 'movies-project';
       options.headers['User-Agent'] = 'HttpClient';
       options.headers['x-api-version'] = '1.0.0';
+      options.headers['x-rapidapi-host'] = 'moviesdatabase.p.rapidapi.com';
+      options.headers['x-rapidapi-key'] =
+          'dea8f474b3msh2242e2fbb523417p10211cjsn0732729851cd';
       // options.headers['x-app-id'] = '8f83d0d7-59dd-43ec-83a8-e56040aea4b5';
       final requestUrl = options.path;
 
